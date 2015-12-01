@@ -1,16 +1,16 @@
-cordova.define("com.alignace.cordova.plugin.card.reader.CardRaderPlugin", function(require, exports, module) { /**
- * CardRaderPlugin.js
+cordova.define("com.alignace.cordova.plugin.card.reader.CardReaderPlugin", function(require, exports, module) { /**
+ * CardReaderPlugin.js
  * Cordova plugin for 3.5mm Headphone Jack Mini Magnetic Mobile Card Reader
  * @Copyright 2015 Alignace LLC. http://www.alignace.com
  * @author Ayajahmed Shaikh <ayaj.shaikh@alignace.com>
  * @Since 21 April, 2015
  */
 
-var CardRaderPlugin = function() {
+var CardReaderPlugin = function() {
 
 };
 
-CardRaderPlugin.prototype.start = function(successCallback, errorCallback) {
+CardReaderPlugin.prototype.start = function(successCallback, errorCallback) {
 
     if (errorCallback == null) { errorCallback = function() {}}
 
@@ -23,10 +23,10 @@ CardRaderPlugin.prototype.start = function(successCallback, errorCallback) {
         console.log("Start failure failure: success callback parameter must be a function");
         return
     }
-    cordova.exec(successCallback, errorCallback, "CardRaderPlugin", "start", []);
+    cordova.exec(successCallback, errorCallback, "CardReaderPlugin", "start", []);
 };
 
-CardRaderPlugin.prototype.stop = function(successCallback, errorCallback) {
+CardReaderPlugin.prototype.stop = function(successCallback, errorCallback) {
 
     if (errorCallback == null) { errorCallback = function() {}}
 
@@ -39,19 +39,19 @@ CardRaderPlugin.prototype.stop = function(successCallback, errorCallback) {
         console.log("Stop failure failure: success callback parameter must be a function");
         return
     }
-    cordova.exec(successCallback, errorCallback, "CardRaderPlugin", "stop", []);
+    cordova.exec(successCallback, errorCallback, "CardReaderPlugin", "stop", []);
 };
 
 //-------------------------------------------------------------------
 if(!window.plugins) {
     window.plugins = {};
 }
-if (!window.plugins.CardRaderPlugin) {
-    window.plugins.CardRaderPlugin = new CardRaderPlugin();
+if (!window.plugins.CardReaderPlugin) {
+    window.plugins.CardReaderPlugin = new CardReaderPlugin();
 }
 
 if (typeof module != 'undefined' && module.exports) {
-  module.exports = CardRaderPlugin;
+  module.exports = CardReaderPlugin;
 }
 
 
