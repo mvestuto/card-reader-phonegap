@@ -3,7 +3,7 @@
 
 @interface ViewController : UIViewController{iMagRead * _reader;}
 
-@interface CardRaderPlugin : CDVPlugin {
+@interface CardreaderPlugin : CDVPlugin {
    NSString* callbackID;
 }
 

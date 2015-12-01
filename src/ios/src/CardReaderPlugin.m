@@ -1,8 +1,8 @@
-#import "CardRaderPlugin.h"
+#import "CardreaderPlugin.h"
 
 #pragma mark -
 
-@interface CardRaderPlugin ()
+@interface CardreaderPlugin ()
 
 @property (nonatomic, copy, readwrite) NSString *callbackID;
 
@@ -13,7 +13,7 @@
 
 #pragma mark -
 
-@implementation CardRaderPlugin
+@implementation CardreaderPlugin
 
 
 - (void)execute:(CDVInvokedUrlCommand *)command {

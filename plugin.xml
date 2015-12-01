@@ -3,7 +3,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android" id="com.alignace.cordova.plugin.card.reader"
 	version="1.0.0">
 
-	<name>CardRaderPlugin</name>
+	<name>CardReaderPlugin</name>
 	<description>Cordova plugin for 3.5mm Headphone Jack Mini Magnetic
 		Mobile Card Reader
 	</description>
@@ -15,8 +15,8 @@
 		<engine name="cordova" version=">=3.0.0" />
 	</engines>
 
-	<js-module src="www/CardRaderPlugin.js" name="CardRaderPlugin">
-		<clobbers target="CardRaderPlugin" />
+	<js-module src="www/CardReaderPlugin.js" name="CardReaderPlugin">
+		<clobbers target="CardReaderPlugin" />
 	</js-module>
 
 	<platform name="android">
@@ -24,16 +24,16 @@
 		<lib-file src="src/android/libs/square.jar" arch="device" />
 
 		<source-file
-			src="src/android/src/com/alignace/cordova/plugin/card/reader/CardRaderPlugin.java"
+			src="src/android/src/com/alignace/cordova/plugin/card/reader/CardReaderPlugin.java"
 			target-dir="src/com/alignace/cordova/plugin/card/reader" />
 		<source-file
 			src="src/android/src/com/alignace/cordova/plugin/card/reader/CardResult.java"
 			target-dir="src/com/alignace/cordova/plugin/card/reader" />
 
 		<config-file target="res/xml/config.xml" parent="/*">
-			<feature name="CardRaderPlugin">
+			<feature name="CardReaderPlugin">
 				<param name="android-package"
-					value="com.alignace.cordova.plugin.card.reader.CardRaderPlugin" />
+					value="com.alignace.cordova.plugin.card.reader.CardReaderPlugin" />
 			</feature>
 		</config-file>
 
@@ -47,14 +47,14 @@
 	    <framework src="libs/libiMagRead.a" />
 	    
 	    <config-file target="config.xml" parent="/*">
-            <feature name="CardRaderPlugin">
-                <param name="ios-package" value="CardRaderPlugin"/>
+            <feature name="CardReaderPlugin">
+                <param name="ios-package" value="CardReaderPlugin"/>
             </feature>
         </config-file>
         
-        <header-file src="src/ios/CardRaderPlugin.h" />
-        <header-file src="src/ios/iMagRead.h" />
-        <header-file src="src/ios/CardRaderPlugin.m" />
+        <header-file src="src/ios/src/CardReaderPlugin.h" />
+        <header-file src="src/ios/src/iMagRead.h" />
+        <header-file src="src/ios/src/CardReaderPlugin.m" />
 	</platform>
 
 </plugin>

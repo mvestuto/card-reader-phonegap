@@ -10,9 +10,9 @@ import android.util.Log;
 import com.square.MagRead;
 import com.square.MagReadListener;
 
-public class CardRaderPlugin extends CordovaPlugin {
+public class CardReaderPlugin extends CordovaPlugin {
 
-	public static final String TAG = "CardRaderPlugin";
+	public static final String TAG = "CardReaderPlugin";
 	public static final String START = "start";
 	public static final String STOP = "stop";
 
