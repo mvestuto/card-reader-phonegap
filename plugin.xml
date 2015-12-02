@@ -44,7 +44,7 @@
 	</platform>
 
 	<platform name="ios">
-	    <framework src="libs/libiMagRead.a" />
+	    <framework src="src/ios/libs/libiMagRead.a" />
 	    
 	    <config-file target="config.xml" parent="/*">
             <feature name="CardReaderPlugin">
