@@ -42,18 +42,6 @@ CardReaderPlugin.prototype.stop = function(successCallback, errorCallback) {
     cordova.exec(successCallback, errorCallback, "CardReaderPlugin", "stop", []);
 };
 
-//-------------------------------------------------------------------
-if(!window.plugins) {
-    window.plugins = {};
-}
-if (!window.plugins.CardReaderPlugin) {
-    window.plugins.CardReaderPlugin = new CardReaderPlugin();
-}
-
-if (typeof module != 'undefined' && module.exports) {
-  module.exports = CardReaderPlugin;
-}
-
-
+module.exports = new CardReaderPlugin();
 //EOF
 });
