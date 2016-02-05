@@ -17,7 +17,7 @@
 	</engines>
 
 	<js-module src="www/CardReaderPlugin.js" name="CardReaderPlugin">
-		<clobbers target="plugins.CardReaderPlugin" />
+		<clobbers target="CardReaderPlugin" />
 	</js-module>
 
 	<platform name="android">
